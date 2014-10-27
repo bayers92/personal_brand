@@ -1488,8 +1488,8 @@ $menu-slide: "transform 500ms ease";
 	height: auto;
 	// margin-top: 20px;
 	// margin-bottom: 20px;
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
 	&:hover {
 		opacity: 0.5;
 	}
@@ -1615,4 +1615,25 @@ $menu-slide: "transform 500ms ease";
 			}
 		}
 	}
+}
+
+
+// OFFCANVAS NAV BAR FIX
+body,html{
+    height:100%;
+    width:100%;
+}
+
+.off-canvas-wrap,.inner-wrap{
+    height:100%;   
+}
+
+.off-canvas-wrap .main-section
+{
+  height: 100%; overflow:scroll;
+}
+
+/* remove scroll bars in Safari */
+.off-canvas-wrap .main-section:-webkit-scrollbar { 
+    display: none; 
 }
