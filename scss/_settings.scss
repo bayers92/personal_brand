@@ -1641,13 +1641,23 @@ $menu-slide: "transform 500ms ease";
 // OFFCANVAS NAV BAR FIX END
 
 #loader {
-	top: 50%;
-	/*left: 50%;*/
-	/*margin-left: -25%;*/
 	position: absolute;
-	margin-top: -10%;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: auto;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+
+#loading_title{
 	text-align: center;
 	color: $primary-color;
-	margin-right: auto;
-	margin-left: auto;
+	position: absolute;
+	top: 35%;
+	height: 10%;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	z-index: 999;
 }

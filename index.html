@@ -29,7 +29,7 @@
 		/* This only works with JavaScript, 
 		   if it's not present, don't show loader */
 		.no-js #loading_page { display: none;  }
-		.js .loading_page { display: block; background-color: white; position: absolute; left: 0px; top: 0px; min-height: 100%; min-width: 100%; z-index: 99999;}
+		.js .loading_page { display: block; background-color: white; position: absolute; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 99999;}
 	</style>
 
 	<script>
@@ -46,6 +46,7 @@
 <body>
 
 	<div class = "loading_page" id ="loading_page">
+		<h3 id = "loading_title"> Brian Ayers </h3>
 		<img src="img/preloader.gif" id="loader">
 	</div>
 
