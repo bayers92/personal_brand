@@ -1639,3 +1639,15 @@ $menu-slide: "transform 500ms ease";
 	}
 }
 // OFFCANVAS NAV BAR FIX END
+
+#loader {
+	top: 50%;
+	/*left: 50%;*/
+	/*margin-left: -25%;*/
+	position: absolute;
+	margin-top: -10%;
+	text-align: center;
+	color: $primary-color;
+	margin-right: auto;
+	margin-left: auto;
+}

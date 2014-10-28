@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="stylesheets/app.css" />
 	<link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css" />
 	<script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 	<!-- Google Analytics -->
 	<script>
@@ -23,8 +24,30 @@
 	ga('send', 'pageview');
 
 	</script>
+		<!-- LOADING GRAPHIC PAGE -->
+	<style>
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loading_page { display: none;  }
+		.js .loading_page { display: block; background-color: white; position: absolute; left: 0px; top: 0px; min-height: 100%; min-width: 100%; z-index: 99999;}
+	</style>
+
+	<script>
+		// Wait for window load
+		$(window).load(function() {
+				// Animate loader off screen
+				$("#loading_page").delay(2000).animate({
+					top: -1000
+				}, 400);
+		});
+	</script>	
+
 </head>
 <body>
+
+	<div class = "loading_page" id ="loading_page">
+		<img src="img/preloader.gif" id="loader">
+	</div>
 
 	<!-- START HOMEPAGE -->
  	<div class = "full-page show-for-medium-up">
@@ -298,7 +321,6 @@
 		</div>
 		<!-- END OFF-CANVAS WRAP -->
 
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/foundation/js/foundation.min.js"></script>
 		<script src="js/app.js"></script>
 		<!-- // <script src="js/foundation/foundation.offcanvas.js"></script> -->
