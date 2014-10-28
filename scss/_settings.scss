@@ -1617,7 +1617,11 @@ $menu-slide: "transform 500ms ease";
 	}
 }
 
-
+/* remove scroll bars in Safari */
+.off-canvas-wrap .main-section:-webkit-scrollbar { 
+    display: none; 
+}
+// 
 // OFFCANVAS NAV BAR FIX START
 @media #{$small-only} {
 	body,html{
@@ -1631,11 +1635,7 @@ $menu-slide: "transform 500ms ease";
 	.off-canvas-wrap .main-section
 	{
 	  height: 100%; overflow:scroll;
-	}
-
-	/* remove scroll bars in Safari */
-	.off-canvas-wrap .main-section:-webkit-scrollbar { 
-	    display: none; 
+	  -webkit-overflow-scrolling: touch;
 	}
 }
 // OFFCANVAS NAV BAR FIX END
