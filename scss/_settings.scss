@@ -1483,26 +1483,25 @@ $menu-slide: "transform 500ms ease";
 }
 
 // Projects
-.project_box {
-	width: 280px;
-	height: auto;
-	// margin-top: 20px;
-	// margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	&:hover {
-		opacity: 0.5;
-	}
-	.pic {
-		// float: left;
-		max-width:100%;
-		max-height:100%;
-		margin-bottom: 10px;
-		border-bottom: thin solid black;
-	}
-	.description {
-		color: $medium-gray;
-		text-decoration: none;
+a {
+	.project_box {
+		width: 280px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		&:hover {
+			opacity: 0.2 !important;
+		}
+		.pic {
+			max-width:100%;
+			max-height:100%;
+			margin-bottom: 10px;
+			border-bottom: thin solid black;
+		}
+		.description {
+			color: $medium-gray;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -1531,6 +1530,17 @@ $menu-slide: "transform 500ms ease";
 		position: absolute;
 		z-index: -1000;
 		background: url(bg.jpg) no-repeat center center fixed; 
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	width: 100%;
+	 	height: 100%;
+	}
+	.bg_overlay{
+		position: absolute;
+		z-index: -1000;
+		background: rgba(0, 0, 0, 0.5);
 	 	-webkit-background-size: cover;
 	 	-moz-background-size: cover;
 	 	-o-background-size: cover;
@@ -1660,4 +1670,10 @@ $menu-slide: "transform 500ms ease";
 	margin-left: 10%;
 	margin-right: 10%;
 	z-index: 999;
+}
+
+#instafeed {
+	a img {
+		padding: 3px 3px 3px 3px;
+	}
 }
