@@ -9,7 +9,7 @@
 	<meta name="Brian Ayers - Personal Website" content="Personal Website" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" href="stylesheets/app.css" />
-	<link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
@@ -36,7 +36,7 @@
 		// Wait for window load
 		$(window).load(function() {
 				// Animate loader off screen
-				$("#loading_page").delay(2000).animate({
+				$("#loading_page").delay(000).animate({
 					top: -1000
 				}, 400);
 		});
@@ -51,7 +51,7 @@
 	</div>
 
 	<!-- START HOMEPAGE -->
- 	<div class = "full-page show-for-medium-up">
+<!--  	<div class = "full-page show-for-medium-up">
 		<div class = "bg"></div>
 		<div class = "bg_overlay"></div>
 		<div class = "home-title">
@@ -61,48 +61,66 @@
 			</a>
 			<div class = "arrow"><a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a> </div>
 		</div>
-	</div>
+	</div> -->
 	<!-- END HOMEPAGE -->
 
 	<div class="off-canvas-wrap fixed" data-offcanvas>
 		<div class="inner-wrap">
 
-			<!-- MOBILE NAVIGATION BAR -->
+			<!-- MOBILE NAV BAR -->
 			<div class = "fixed">
 				<nav class="tab-bar show-for-small-only">
-					<section class="left-small">
-						<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-					</section>
-
-					<section class="middle tab-bar-section">
-						<h1 class="title">Brian Ayers</h1>
+					<section class="right-small">
+						<a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
 					</section>
 				</nav>
 			</div>
 
 			<!-- MOBILE NAVIGATION OFFCANVAS LIST -->
-			<aside class="left-off-canvas-menu" aria-hidden="true">
+			<aside class="right-off-canvas-menu" aria-hidden="true">
 				<ul class="off-canvas-list">
 					<li><label>Brian Ayers</label></li>
 					<li><a href="#about"><i class="fa fa-user fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
-					<li><a href="#projects"><i class="fa fa-star fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Projects</a></li>
-					<li><a href="#blog"><i class="fa fa-comment fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Blog</a></li>
-					<li><a href="#instagram"><i class="fa fa-instagram fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a></li>
+					<li><a href="#startups"><i class="fa fa-star fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Startups</a></li>
+					<li><a href="#projects"><i class="fa fa-flask fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Research Projects</a></li>
+					<li><a href="#blog"><i class="fa fa-newspaper-o fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reading List</a></li>
+					<li><a href="#instagram"><i class="fa fa-instagram fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Photos</a></li>
 					<li><a href="mailto:brianc.ayers@gmail.com"><i class="fa fa-envelope-o fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
 				</ul>
 			</aside>
 			<!-- END MOBILE NAV OFFCANVAS -->
 
 			<section class="main-section">
-				<div class = "show-for-medium-up">
 
+
+
+				<div class = "row hero">
+					<div class = "small-12 columns text-center logo">
+						<a href="#about">
+							<h1>BRIAN AYERS</h1>
+							<h3>SCIENCE | MEDICINE | TECHNOLOGY</h3>
+						</a>
+					</div>
+					<div class = "small-12 small-centered columns text-center arrow">
+						<a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a>
+					</div>
+				</div>
+				<!-- END hero row -->
+
+
+
+
+
+
+				<div class = "show-for-medium-up">
 					<!-- START DESKTOP NAVIGATION -->
 					<div data-magellan-expedition="fixed">
 						<dl class="sub-nav">
 							<dd data-magellan-arrival="about"><a href="#about">About</a></dd>
-							<dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
-							<dd data-magellan-arrival="blog"><a href="#blog">Blog</a></dd>
-							<dd data-magellan-arrival="instagram"><a href="#instagram">Instagram</a></dd>
+							<dd data-magellan-arrival="startups"><a href="#startups">Startups</a></dd>
+							<dd data-magellan-arrival="projects"><a href="#projects">Research Projects</a></dd>
+							<dd data-magellan-arrival="blog"><a href="#blog">Reading List</a></dd>
+							<dd data-magellan-arrival="instagram"><a href="#instagram">Photos</a></dd>
 							<dd><a href="mailto:BrianC.ayers@gmail.com">Contact</a></dd>
 						</dl>
 					</div>
@@ -120,7 +138,7 @@
 					</div>
 					<div class = "row">
 						<div class = "small-12 small-centered columns">
-							<div class = "pic">
+							<div class = "pic about">
 								<img src="img/about.jpg">
 							</div>
 						</div>
@@ -128,20 +146,20 @@
 
 					<div class = "row">
 						<div class ="small-12 small-centered columns">
-							<p>I am a current MD/MBA candidate at the University of Rochester interested in emerging technologies in the healthcare industry. I studied biochemistry and computer science during undergrad and want to be engaged at the intersection of these two fields. I did my undergraduate thesis on the synthesis and functionalization of gold nanoparticles and have experience processing and analyzing next-gen sequencing data with tools such as Bowtie, Tophat, and Cufflinks.<br/> <br/>
+							<p>I am a current MD/MBA candidate at the University of Rochester interested in emerging technologies in the healthcare industry. I studied biochemistry and computer science during undergrad and want to be engaged at the intersection of these two fields. I believe there is incredible demand for innovations in the healthcare industry and want to help bring these ideas to fruition. I did my undergraduate thesis on the synthesis and functionalization of gold nanoparticles and have experience processing and analyzing next-gen sequencing data with tools such as Bowtie, Tophat, and Cufflinks. I am also an avid software developer with experience with html, css, ruby on rails, python, and java. <br/> <br/>
 
-								My other interests include entrepreneurship and athletics. I founded a clothing and lifestyle brand my freshman year in college which I continue to run (<a href="http://www.goodeesclothing.com"><span style= "color:black">www.goodeesclothing</span></a>) and played 4 years of varsity lacrosse as well as intramural basketball and football. 
+						<!-- 		My other interests include entrepreneurship and athletics. I founded a clothing and lifestyle brand my freshman year in college which I continue to run (<a href="http://www.goodeesclothing.com"><span style= "color:black">www.goodeesclothing</span></a>) and played 4 years of varsity lacrosse as well as intramural basketball and football.  -->
 							</p>
 						</div>
 					</div>
 
 					<div class = "row">
 						<div class = "small-12 small-centered columns">
-							<a href = "Ayers,Brian_Resume.pdf"><i class="fa fa-paperclip"></i>View Full Resume </a><br/><br/>
+							<a href = "Ayers,Brian_Resume.pdf"><i class="fa fa-paperclip fa-2x"></i> &nbsp; View Full Resume </a><br/><br/>
 						</div>
 					</div>
 
-					<div class = "row">
+					<!-- <div class = "row">
 						<div class = "small-12 small-centered columns">
 							<h3> Education </h3>
 							<div class = "larger-text"> University of Rochester (MD/MBA)</div>
@@ -183,10 +201,71 @@
 								&nbsp; <em> Fanning Lab, UMass Med School | Summer 2011 </em> <br/>
 							</div>
 						</div>
+					</div> -->
+
+					<div class = "row pastExperience">
+						<div class = "small-12 small-centered columns">
+							<h4 class = "header"> Education </h4>
+							<div class = "small-12 medium-3 columns text-center">
+								<a href="http://www.simon.rochester.edu/programs/full-time-mba/academics/programs/other-programs/md-mba-program/index.aspx"> <img src = "img/URMC.jpg"></img></a>
+							</div>
+							<div class = "small-12 medium-3 columns text-center">
+								<a href="http://www.simon.rochester.edu/programs/full-time-mba/academics/programs/other-programs/md-mba-program/index.aspx"> <img src = "img/simon.png"></img></a>
+							</div>
+							<div class = "small-12 medium-3 columns text-center">
+								<a href="http://middlebury.edu"> <img src = "img/middlebury.jpg"></img></a>
+							</div>
+							<div class = "small-12 medium-3 columns text-center">
+								<a href="https://www.stmarksschool.org/"> <img src = "img/stMarks.jpg"></img></a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- END ABOUT SECTION	 -->
-
+				<!-- START PORTFOLIO -->
+				<div class = "content section">
+					<a name = "startups" data-magellan-destination="startups"></a>
+					<div class = "row">
+						<div class = "small-12 small-cenetered columns">
+							<h3 class = "header"> Startups </h3>
+						</div>
+					</div>
+					<div class ="row portfolio">
+						<a href="http://goodeesclothing.com">
+							<div class = "client goodees">
+								<div class = "small-12 columns">
+									<h2> <b>Goodees Clothing</b> </h2>
+									<p> Founder & CEO </p>
+								</div>
+							</div>
+						</a>
+						<a href="http://brandclub.co">
+							<div class = "client brandClub">
+								<div class = "small-12 columns">
+									<h2> <b>Brand Club </b></h2>
+									<p> Co-Founder & CTO </p>
+								</div>
+							</div>
+						</a>
+						<a href="http://watermelonventures.com">
+							<div class = "client watermelon">
+								<div class = "small-12 columns">
+									<h2> <b>Watermelon Ventures</b></h2>
+									<p> Co-Managing Partner </p>
+								</div>
+							</div>
+						</a>
+						<a href="http://patrickwiesefoundation.org">
+							<div class = "client PWF">
+								<div class = "small-12 columns">
+									<h2> <b>Patrick Wiese Foundation</b></h2>
+									<p> Board Member </p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- END PORTFOLIO SECTION	 -->
 
 
 				<!-- START PROJECT SECTION -->
@@ -194,36 +273,11 @@
 					<a name = "projects" data-magellan-destination="projects"></a>
 					<div class = "row">
 						<div class = "small-12 small-cenetered columns">
-							<h3 class = "header"> Projects </h3>
+							<h3 class = "header"> Research Projects </h3>
 						</div>
 					</div>
-					<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-						<li> 
-							<a href ="http://www.goodeesclothing.com">
-								<div class = "project_box">
-									<div class = "pic">
-										<img src="img/goodees.png">
-									</div>
-									<div class = "description">
-										Goodees Clothing | <em> Founder</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href ="http://www.patrickwiesefoundation.org">
-								<div class = "project_box">
-									<div class = "pic">
-										<img src="img/pwf.png">
-									</div>
-									<div class = "description">
-										Patrick Wiese Foundation | <em> Board </em>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li>
+					<div class = "row portfolio">
+						<div class = "small-12 medium-4 columns">
 							<a href ="http://www.rnaseq101.com">
 								<div class = "project_box">
 									<div class = "pic">
@@ -234,22 +288,9 @@
 									</div>
 								</div>
 							</a>
-						</li>
+						</div>
 
-						<li>
-							<a href ="http://www.brandclub.co">
-								<div class = "project_box">
-									<div class = "pic">
-										<img src="img/brandclub.png">
-									</div>
-									<div class = "description">
-										Brand Club | <em> Founder </em>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li>
+						<div class = "small-12 medium-4 columns">
 							<a href ="Ayers,Brian_thesis.pdf">
 								<div class = "project_box">
 									<div class = "pic">
@@ -260,9 +301,9 @@
 									</div>
 								</div>
 							</a>
-						</li>
+						</div>
 
-						<li>
+						<div class = "small-12 medium-4 columns">
 							<a href ="Porter_EMR_report.pdf">
 								<div class = "project_box">
 									<div class = "pic">
@@ -273,28 +314,20 @@
 									</div>
 								</div>
 							</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 				<!-- END PROJECT SECTION -->
 
 				<!-- START BLOG SECTION -->
-				<div class = "content section">
+				<div class = "content section blog">
 					<a name = "blog" data-magellan-destination="blog"></a>
-					<div class = "row">
-						<div class = "small-12 small-centered columns center-text">
-							<h3> Blog </h3>
-						</div>
-						<div class = "small-12 small-centered columns">
-							<h5 class = "header center-text"> Some of my favorite articles from around the web </h5>
-						</div>
-					</div>
-					<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-						<script type="text/javascript" src="http://brian-ayers.tumblr.com/js"></script>
-					</ul>
-					<div class = "row">
-						<div class = "small-12 small-centered columns center-text">
-							<p> <a href="http://brian-ayers.tumblr.com/"> View full blog.. </a> </p>
+					<div class = "row blog">
+						<div class = "small-12 columns">
+							<h3 class = "header center-text"> Reading List </h3>
+							<ul class="no-bullet">
+								<script type="text/javascript" src="http://brian-ayers.tumblr.com/js"></script>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -302,11 +335,11 @@
 
 
 				<!-- START INSTAGRAM SECTION -->
-				<div class = "content section">
+				<div class = "content section insta">
 					<a name = "instagram" data-magellan-destination="instagram"></a>
 					<div class = "row">
 						<div class = "small-12 small-centered columns center-text">
-							<h3 class = "header"> Instagram Feed </h3>
+							<h3 class = "header"> Photos </h3>
 						</div>
 						<div class = "small-12 small-centered columns center-text">
 							<ul class="small-block-grid-3">
@@ -342,6 +375,5 @@
 
 		<script src="bower_components/foundation/js/foundation.min.js"></script>
 		<script src="js/app.js"></script>
-		<!-- // <script src="js/foundation/foundation.offcanvas.js"></script> -->
 	</body>
 	</html>
